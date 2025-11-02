@@ -1,6 +1,8 @@
 from dataclasses import dataclass
 from enum import Enum
 
+from pandas import DataFrame
+
 
 class Category(Enum):
     MACROECONOMICS = "Macroeconomics"
@@ -24,3 +26,4 @@ class Frame:
     eurostat_code: str
     frequency: Frequency
     categories: list[Category]
+    dataframe: DataFrame | None = None
