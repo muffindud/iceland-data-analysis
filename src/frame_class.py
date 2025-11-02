@@ -1,4 +1,4 @@
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 from enum import Enum
 
 from pandas import DataFrame
@@ -26,4 +26,6 @@ class Frame:
     eurostat_code: str
     frequency: Frequency
     categories: list[Category]
+    data_columns: list[str] = field(default_factory=lambda: ["value", "TIME_PERIOD"])
+    useful_column_filter: dict[str, list[str]] = None
     dataframe: DataFrame | None = None
