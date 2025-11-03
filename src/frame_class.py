@@ -28,4 +28,5 @@ class Frame:
     categories: list[Category]
     data_columns: list[str] = field(default_factory=lambda: ["value", "TIME_PERIOD"])
     useful_column_filter: dict[str, list[str]] = None
+    series_id_columns: list[str] = None
     dataframe: DataFrame | None = None
