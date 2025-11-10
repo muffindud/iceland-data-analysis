@@ -19,7 +19,7 @@ cd iceland-data-analysis
 3. Checkout the desired branch (if applicable).
 
 ```bash
-git checkout assignment-1
+git checkout assignment-2
 ```
 
 4. Create a virtual environment (optional but recommended).
